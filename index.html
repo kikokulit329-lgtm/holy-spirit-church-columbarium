@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Holy Spirit Church & Columbarium — a place of worship, prayer, remembrance, and hope.">
+<title>Holy Spirit Church & Columbarium</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="#home"><span class="brand-mark">✦</span><span><strong>Holy Spirit</strong><small>Church & Columbarium</small></span></a>
+    <button class="menu" aria-label="Open menu" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+    <div class="nav-links">
+      <a href="#about">About</a><a href="#worship">Worship</a><a href="#columbarium">Columbarium</a><a href="#ministries">Ministries</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="#contact">Visit Us</a>
+    </div>
+  </nav>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <p class="eyebrow">A place of faith, peace & remembrance</p>
+    <h1>Where faith finds a home<br><em>and memories find peace.</em></h1>
+    <p class="hero-copy">Welcome to Holy Spirit Church & Columbarium — a sacred community for worship, prayer, fellowship, and the peaceful remembrance of those we love.</p>
+    <div class="hero-actions"><a class="btn primary" href="#about">Discover Our Community</a><a class="btn ghost" href="#columbarium">Explore the Columbarium</a></div>
+  </div>
+  <div class="scroll">SCROLL <span>↓</span></div>
+</section>
+
+<section id="about" class="section intro">
+  <div class="container split">
+    <div><p class="eyebrow">Our community</p><h2>A sanctuary for every season of life.</h2></div>
+    <div><p>Holy Spirit Church is a welcoming home for prayer, worship, and Christian fellowship. We seek to nurture faith, serve our neighbors, and accompany families through life's celebrations and moments of remembrance.</p><p class="muted">Whether you are joining us for worship, seeking a quiet place to pray, or honoring a loved one, you are welcome here.</p></div>
+  </div>
+</section>
+
+<section id="worship" class="section dark">
+ <div class="container">
+  <div class="section-head"><div><p class="eyebrow gold">Worship & prayer</p><h2>Come as you are.</h2></div><p>Gather with us in faith and fellowship. <br>Schedule details can be updated here by the church.</p></div>
+  <div class="cards three">
+   <article class="card"><span class="icon">✝</span><h3>Holy Mass</h3><p>Join our faith community in prayer, scripture, and the celebration of the Eucharist.</p><a href="#contact">View schedule →</a></article>
+   <article class="card"><span class="icon">☼</span><h3>Prayer & Adoration</h3><p>A quiet invitation to pause, pray, and spend time in the presence of God.</p><a href="#contact">Learn more →</a></article>
+   <article class="card"><span class="icon">♧</span><h3>Fellowship</h3><p>Grow in faith and friendship through our ministries, activities, and community life.</p><a href="#ministries">Our ministries →</a></article>
+  </div>
+ </div>
+</section>
+
+<section id="columbarium" class="section columbarium">
+ <div class="container split col-split">
+  <div class="col-photo"><div class="photo-caption">A sacred space for remembrance</div></div>
+  <div class="col-copy"><p class="eyebrow">The Columbarium</p><h2>A peaceful place to remember.</h2>
+   <p>Our columbarium offers families a dignified and prayerful setting for the cremated remains of loved ones. Designed as an extension of our spiritual community, it provides a place to visit, reflect, pray, and keep cherished memories close.</p>
+   <ul class="checks"><li>Dedicated memorial niches</li><li>Peaceful prayer and reflection spaces</li><li>Family-oriented arrangements and guidance</li><li>A sacred setting connected to the church community</li></ul>
+   <a class="btn dark-btn" href="#contact">Inquire About a Niche</a>
+  </div>
+ </div>
+</section>
+
+<section id="ministries" class="section cream">
+ <div class="container"><div class="section-head"><div><p class="eyebrow">Serve & belong</p><h2>There is a place for you.</h2></div><p>Discover ways to grow in faith and share your gifts.</p></div>
+ <div class="ministry-grid"><div><b>01</b><h3>Youth Ministry</h3><p>Faith, friendship, formation, and opportunities for young people.</p></div><div><b>02</b><h3>Family Ministry</h3><p>Support and fellowship for families as they grow together in faith.</p></div><div><b>03</b><h3>Community Outreach</h3><p>Practical service and compassionate care for our wider community.</p></div><div><b>04</b><h3>Music & Liturgy</h3><p>Use the gifts of music and service to enrich our worship.</p></div></div>
+ </div>
+</section>
+
+<section class="quote"><div class="container"><span>“</span><blockquote>May the Holy Spirit fill our hearts with faith, our homes with love, and our community with hope.</blockquote><small>— Holy Spirit Church</small></div></section>
+
+<section id="contact" class="section contact"><div class="container contact-grid">
+ <div><p class="eyebrow">Get in touch</p><h2>We would be glad to welcome you.</h2><p>For Mass schedules, church services, columbarium inquiries, memorial arrangements, or general questions, please contact the church office.</p>
+ <div class="contact-details"><p><b>Church Office</b><br>Monday–Saturday · 9:00 AM–5:00 PM</p><p><b>Location</b><br>Add church address here</p><p><b>Phone / Email</b><br>Add contact number · Add email address</p></div></div>
+ <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you. Please connect this form to your preferred email or form service.');"><label>Name<input required type="text" placeholder="Your name"></label><label>Email<input required type="email" placeholder="you@example.com"></label><label>How can we help?<select><option>Church inquiry</option><option>Mass / prayer schedule</option><option>Columbarium inquiry</option><option>Memorial arrangements</option><option>Other</option></select></label><label>Message<textarea rows="4" placeholder="Write your message..."></textarea></label><button class="btn primary" type="submit">Send Inquiry</button></form>
+ </div></section>
+</main>
+<footer><div class="container footer"><a class="brand" href="#home"><span class="brand-mark">✦</span><span><strong>Holy Spirit</strong><small>Church & Columbarium</small></span></a><p>© 2026 Holy Spirit Church & Columbarium. All rights reserved.</p><div><a href="#about">About</a><a href="#contact">Contact</a></div></div></footer>
+<script>window.addEventListener('scroll',()=>document.querySelector('.site-header').classList.toggle('scrolled',scrollY>30));</script>
+</body></html>
